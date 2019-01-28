@@ -15,3 +15,12 @@ docker run -it -p 8888:8888 -v `pwd`:/opt/notebooks my_conda_proj /bin/bash
 
 /opt/conda/bin/jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip=0.0.0.0 --port=8888 --no-browse
 ```
+
+## Attach to existing docker session
+```
+docker ps
+docker exec -it f9e212e83a22 /bin/bash
+```
+
+##### ref
+https://github.com/JWarmenhoven/Coursera-Machine-Learning
